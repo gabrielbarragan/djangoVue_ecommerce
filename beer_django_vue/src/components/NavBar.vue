@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar is-light">
+    <nav class="navbar is-dark">
        <div class="navbar-brand">
          <router-link to="/" class="navbar-item"><strong>BeerUp</strong></router-link>
 
@@ -18,9 +18,9 @@
 
              <div class="navbar-item">
                <div class="buttons">
-                 <router-link to="/login" class="button is-light">Login</router-link>
+                 <router-link to="/login" class="button is-warning">Login</router-link>
                  
-                 <router-link to="/cart" class="button is-light">
+                 <router-link to="/cart" class="button is-warning">
                     <span class="icon"><i class="fas fa-shopping-cart"></i> </span>
                     <span>Cart</span>
                  </router-link>
