@@ -51,6 +51,7 @@ export default {
   },
   mounted(){
     this.getLatestProducts()
+    document.title= 'Home | Beerup '
   },
   methods:{
     async getLatestProducts(){
