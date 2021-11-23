@@ -13,8 +13,9 @@
 
          <div class="navbar-menu" id="navbar-menu" v-bind:class="{ 'is-active': showMobileMenu }">
            <div class="navbar-end">
-             <router-link to="/artesanales" class="navbar-item"> Artesanales</router-link>
-             <router-link to="/tradicionales" class="navbar-item"> Tradicionales</router-link>
+             <router-link to="/premium/" class="navbar-item"> Premiums</router-link>
+             <router-link to="/artesanales/" class="navbar-item"> Artesanales</router-link>
+             <router-link to="/tradicionales/" class="navbar-item"> Tradicionales</router-link>
 
              <div class="navbar-item">
                <div class="buttons">
