@@ -39,7 +39,7 @@
 
              <div class="navbar-item">
                <div class="buttons">
-                 <router-link to="/login" class="button is-warning">Login</router-link>
+                 <router-link to="/log-in" class="button is-warning">Login</router-link>
                  
                  <router-link to="/cart" class="button is-warning">
                     <span class="icon"><i class="fas fa-shopping-cart"></i> </span>
@@ -53,6 +53,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
 
  name: 'NavBar',
@@ -64,12 +65,11 @@ export default {
       }
     }
   },
-  beforeCreate(){
-    this.$store.commit('initializeStore')
-  },
+  
   mounted(){
     this.cart= this.$store.state.cart
   },
+
   computed:{
     cartTotalLength(){
       let totalLength = 0
