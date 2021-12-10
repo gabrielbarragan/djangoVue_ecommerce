@@ -47,11 +47,11 @@ export default {
         return{
             username:'',
             password:'',
-            errors:[]
+            errors:[],
         }
     },
     mounted(){
-        document.title = 'Log In | BeerUp'
+        document.title = 'Acceder | BeerUp'
     },
 
     methods:{

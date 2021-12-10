@@ -8,9 +8,9 @@
               <table class="table is-fullwidth" v-if="cartTotalLength">
                   <thead>
                       <tr>
-                          <th>Product</th>
-                          <th>Price</th>
-                          <th>Quantity</th>
+                          <th>Producto</th>
+                          <th>Precio</th>
+                          <th>Cantidad</th>
                           <th>Total</th>
                           <th></th>
                       </tr>

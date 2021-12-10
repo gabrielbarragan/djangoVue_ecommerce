@@ -39,7 +39,8 @@
 
              <div class="navbar-item">
                <div class="buttons">
-                 <router-link to="/log-in" class="button is-warning">Login</router-link>
+                 <router-link to="/my-account" class="button is-secondary" v-if="$store.state.isAuthenticated">Mi cuenta</router-link>
+                 <router-link to="/log-in" class="button is-success" v-else>Entrar</router-link>
                  
                  <router-link to="/cart" class="button is-warning">
                     <span class="icon"><i class="fas fa-shopping-cart"></i> </span>
@@ -62,12 +63,14 @@ export default {
       showMobilMenu: false,
       cart:{
         items:[]
-      }
+      },
+      
     }
   },
   
   mounted(){
     this.cart= this.$store.state.cart
+    
   },
 
   computed:{
